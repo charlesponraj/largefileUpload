@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Large File Upload Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Bootstrap -->
+        <link href="js/libs/bootstrap-3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/site.css" rel="stylesheet" media="screen">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="js/libs/html5shiv-3.6.1/html5shiv.js"></script>
+        <script src="js/libs/respond.js-1.1.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="nav navbar-inverse navbar-fixed-left nav-color-beige">
+            <div class="form-gap">                
+
+                <div class="input-group">                        
+                    <div class="input-group-addon">                        
+                            <i class="glyphicon glyphicon-inbox"></i>
+                    </div>
+                    <input type="email" name="from-email" 
+                           data-value=""
+                           placeholder="From" class="form-control" />
+                </div>
+                
+                <div class="input-group">                        
+                    <div class="input-group-addon">                        
+                            <i class="glyphicon glyphicon-inbox"></i>
+                    </div>
+                    <input type="email" name="to-email" 
+                           data-value=""
+                           placeholder="To" class="form-control" />
+                </div>
+                
+                <div class="input-group">                        
+                    <div class="input-group-addon">                        
+                            <i class="glyphicon glyphicon-file"></i>
+                    </div>
+                    <input type="file" name="files[]" 
+                           data-value=""
+                           class="form-control" multiple />
+                </div>
+                
+                <div class="input-group">                        
+                    <div class="input-group-addon">                        
+                        <i class="glyphicon glyphicon-book"></i>
+                    </div>
+                    <input name="msg" 
+                           data-value=""
+                           placeholder="Message" class="form-control" />
+                </div>
+
+                <button class="btn btn-primary pull-right">
+                    <i class="glyphicon glyphicon-send"></i>
+                    Upload
+                </button>
+            </div>
+        </div>
+        <div class="nav navbar-inverse navbar-fixed-top bs-docs-nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand"><i class="glyphicon glyphicon-th-large"></i> Large File Upload Application</a>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-right inset-shadow">            
+<!--            
+            <div class="page-header">
+                <h1><i class="glyphicon glyphicon-dashboard"></i> DashBoard <small><em>List of available pages</em></small></h1>
+            </div>
+-->
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="page-overlay">
+            <div class="place-center">
+                <h2><i class="glyphicon glyphicon-th-large load-icon"></i> Loading</h2>
+            </div>            
+        </div>
+        <div class="nav navbar-inverse navbar-fixed-bottom nav-bar-bordered">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand text-muted"><i class="glyphicon glyphicon-copyright-mark"></i> Some Company</a>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/libs/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+        <script src="js/site.js"></script>
+    </body>
+</html>
